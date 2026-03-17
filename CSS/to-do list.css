@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: poppins, sans-serif;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.todo{
+    background-color: plum;
+    padding: 25px 30px;
+    border-radius: 20px;
+    width: 350px;
+    max-width: 90%;
+    text-align: center;
+}
+.todo h1{
+    font-size: 28px;
+    color: aliceblue;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-weight: lighter;
+}
+.input-area{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-area ::placeholder{
+    font-size: small;
+    color: cornflowerblue;
+}
+#taskInput{
+    flex: 1;
+    padding: 10px 15px;
+    border: 2px solid white;
+    font-size: 16px;
+    color: blue;
+}
+#addBtn{
+    margin-left: 10px;
+    padding: 10px 15px;
+    border: none;
+    background: hotpink;
+    color: white;
+    font-weight: bold;
+    cursor: move;
+   transition: 0.2s;
+}
+#addBtn:hover{
+    background-color: white;
+    color: black;
+}
+#taskList li{
+    background-color: #ffe0f2;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: blue;
+}
+#taskList li.done{
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+.delete-btn{
+    background-color: yellow;
+    border: none;
+    cursor: move;
+    font-size: 18px;
+    color: black;
+    transition: color 0.2s;
+}
+.delete-btn:hover{
+    background-color: black;
+    transform: scale(1.2);
+    opacity: 0.8;
+}

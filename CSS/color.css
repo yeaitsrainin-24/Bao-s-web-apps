@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI'
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #dbeafe #fce7f3);
+}
+.app{
+    text-align: center;
+    padding: 40px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    width: 500px;
+}
+hi{
+    margin-bottom: 20px;
+    color: #3b82f6;
+}
+#generateBtn{
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background: #93c5fd;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 30px;
+}
+#generateBtn:hover{
+    background: #60a5fa;
+    transform: scale(1.05);
+}
+.palette{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+.color-card{
+    height: 120px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.color-card:hover{
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+}
+.color-card p{
+    background: rgba(255, 255, 255, 0.7);
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #333;
+    transition: 0.3s;
+}

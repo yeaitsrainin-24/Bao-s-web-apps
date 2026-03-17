@@ -1,0 +1,118 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* OVERALL */
+.structure{
+    background: linear-gradient(rgba(157, 192, 231, 0.4)) aliceblue;    
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+}
+.top{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    background-color: darkblue;
+    padding-bottom: 2px;
+}
+.logo{
+    margin-left: 10px;
+    font-weight: bold;
+    font-style: italic;
+    margin-right: 20px;
+}
+.logo a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.top nav{
+    justify-content: center;
+    display: flex;
+    margin-right: 10px;
+}
+nav li{
+    list-style: none;
+}
+li a{
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 12px;
+    color: aliceblue;
+}
+@media(max-width: 600rem){
+    .logo{
+        font-size: 13px;
+    }
+    li a{
+        font-size: 13px;
+    }
+}
+.first{
+    text-align: center;
+    display: block;
+    justify-content: center;
+    margin-top: 10%;
+}
+.s{
+    margin-bottom: 20px;
+    color: darkblue;
+    font-size: 15px;
+}
+.t{
+    color: cornflowerblue;
+    font-size: 15px;
+    font-weight: lighter;
+    font-style: italic;
+}
+@media(max-width: 600rem){
+    .s{
+        font-size: 20px;
+    }
+    .t{
+        font-size: 20px;
+    }
+}
+.talks{
+    margin-top: 20px;
+    text-align: center;
+}
+.talks p{
+    color: darkblue;
+    font-size: 15px;
+    font-weight: 30px;
+}
+.round{
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.round a{
+    text-decoration: none;
+    font-size: 12px;
+    color: whitesmoke;
+    border: 2px solid cornflowerblue;
+    padding: 3px 15px;
+    background: darkblue;
+    border-radius: 15%;
+    margin-left: 3px
+}
+.round a:hover{
+    color: darkblue;
+    border: 2px solid darkblue;
+    background: transparent;
+    padding: 3px 15px;
+    border-radius: 15%;
+    margin-left: 3px
+}
+@media(max-width: 600rem){
+    .round a{
+        font-size: 15px;
+    }
+    .talks p{
+        font-size: 15px;
+    }
+}

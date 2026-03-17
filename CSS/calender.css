@@ -1,0 +1,73 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #cce5ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0px;
+}
+.calender-container{
+    background-color: rgba(232, 178, 227, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+    width: 350px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.calender-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.calender-header h2{
+    font-weight: 600px;
+    font-size: 1.3em;
+    margin: 0px;
+    color: darkblue;
+}
+.calender-header button{
+    background-color: #99ccff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 10px;
+    cursor: point;
+    font-weight: 600;
+    color: white;
+    transition: all 0.2s ease;
+}
+.calender-header button:hover{
+    background-color: #66b3ff;
+}
+.calender-weekdays, .calender-days{
+    display: grid;
+    grid-template-columns: repeat(7, 3fr);
+    text-align: center;
+}
+.calender-weekdays div{
+    font-weight: 600px;
+    padding: 8px 0px;
+    color: #0059b3;
+}
+.calender-days{
+    padding: 10px 0px;
+    margin: 2px;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.calender-days:hover{
+    color: white;
+}
+.empty{
+    background: transparent;
+    cursor: default;
+}
+.today{
+    background-color: #3399ff;
+    color: white;
+    font-weight: bold;
+    border-radius: 25%;
+    box-shadow: 0px 0px 8px rgba(0, 102, 204, 0.5);
+}
